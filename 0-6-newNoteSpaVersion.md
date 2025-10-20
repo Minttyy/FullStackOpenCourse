@@ -9,5 +9,5 @@ sequenceDiagram
   activate server
   server-->>browser: HTML doc for new note only
 	deactivate server
-  Note right of browser: Response is 201 where the new note is created instead of found
+  Note right of browser: Response is 201 where the new note is created and there is no redirect to another page once the note is added
 ```
