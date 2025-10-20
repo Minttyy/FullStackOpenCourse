@@ -7,6 +7,7 @@ sequenceDiagram
   activate server
   server-->>browser: HTML doc for new note only
 	deactivate server
+	Note right of browser: Status code is 302 Found where they add the new note and also redirects to the next page
 
   browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
 	activate server
